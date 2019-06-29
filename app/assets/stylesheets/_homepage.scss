@@ -1,0 +1,107 @@
+
+.main {
+    
+    padding-top: 5rem;
+
+    &.homepage{
+
+        .bottom {
+            border-bottom: 1px solid var(--light-grey);
+            padding-bottom: 5rem;
+
+        }
+        
+        .row {
+            display: grid;
+            padding-top: 5rem;
+
+            &.two {
+                grid-template-columns: 52% auto;
+                grid-gap: 3rem;
+            }
+
+            > div {
+    
+                h2 {
+                    margin-bottom: 1rem;
+                    text-transform: uppercase;
+                }
+
+                img {
+                    width: 100%;
+                }
+
+            }
+
+            .feature {
+                width: 100%;
+                border-right: 1px solid var(--light-grey);
+                padding-right: 3rem;
+ 
+
+                h3 {
+                    margin-top: 1.5rem;
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                }
+                p {
+                    margin-top: 0.5rem;
+                    font-size: 1.25rem;
+                }
+            }
+
+            .recommended {
+
+                .item {
+                    display: grid;
+                    grid-template-columns: 35% auto;
+                    grid-gap: 1rem;
+
+                    &:not(:last-child) {
+                        margin-bottom: 1rem;
+                        border-bottom: 1px solid var(--light-grey);
+                        padding-bottom: 1rem;
+                    }
+
+                    h3 {
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        margin-bottom: 0.5rem;
+                    }
+                }
+
+
+            }
+
+    
+        }
+
+
+        .item-list {
+
+            margin-top: 5rem;
+
+            .wrap{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 3rem;
+
+                .item {
+
+                    .cover {
+                        img {width: 100%;}
+                        margin-bottom: 1rem;
+                    }
+
+                    h3 {
+                        font-size: 1.5rem;
+                        margin-bottom: 0.5rem;
+                        font-weight: 500;
+                    }
+                }
+        }
+            
+        }
+    }
+
+}

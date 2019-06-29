@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title>ItemPage | GreenFun</title>
+        <title><%= content_for?(:title) ? content_for(:title) + "| GreenFun": "GreenFun" %></title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,11 +18,17 @@
 
         <header class="header">
             <div class="wrap">
-                <a class="profile">Profile</a>
-                <h1 class="title">GreenFun</h1>
+                <a class="profile" href="http://localhost:3000/users/1/">Profile</a>
+                <h1 class="title"><a href="http://localhost:3000/companies/">GreenFun</a></h1>
             </div>
         </header>
           <body>
     <%= yield %>
   </body>
+
+  <footer class="footer">
+  <div class="wrap">
+  Copy right
+  </div>
+</footer>
 </html>

@@ -1,37 +1,87 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Companies</h1>
+<main class="main homepage">
+<div class="bottom">
+    <div class="wrap">
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>End date</th>
-      <th>Investor count</th>
-      <th>Miles value</th>
-      <th>Miles count</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+        <div class="row two ">
+            <div class="feature">
+                <h2>Feature</h2>
+                <figure class="cover">
+                        <img src="https://d3n8a8pro7vhmx.cloudfront.net/eurolabour/pages/920/attachments/original/1540391488/Plastic-bottles-700x410.jpg?1540391488">
+                </figure>
+                <h3>This is title</h3>
+                <p>They are reducing plastic water bottles in Hong Kong....</p>
+            </div>
+            <div class="recommended">
+                <h2>Recommended</h2>
+                <div class="item">
+                        <figure class="cover">
+                                <img src="https://d3n8a8pro7vhmx.cloudfront.net/eurolabour/pages/920/attachments/original/1540391488/Plastic-bottles-700x410.jpg?1540391488">
+                        </figure>
+                        <div class="content">
+                            <h3>This is title</h3>
+                            <p>They are reducing plastic water bottles in Hong Kong....</p>
+                        </div>
+                </div>
+                <div class="item">
+                        <figure class="cover">
+                                <img src="https://d3n8a8pro7vhmx.cloudfront.net/eurolabour/pages/920/attachments/original/1540391488/Plastic-bottles-700x410.jpg?1540391488">
+                        </figure>
+                        <div class="content">
+                            <h3>This is title</h3>
+                            <p>They are reducing plastic water bottles in Hong Kong....</p>
+                        </div>
+                </div>
+                <div class="item">
+                        <figure class="cover">
+                                <img src="https://d3n8a8pro7vhmx.cloudfront.net/eurolabour/pages/920/attachments/original/1540391488/Plastic-bottles-700x410.jpg?1540391488">
+                        </figure>
+                        <div class="content">
+                            <h3>This is title</h3>
+                            <p>They are reducing plastic water bottles in Hong Kong....</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-  <tbody>
-    <% @companies.each do |company| %>
-      <tr>
-        <td><%= company.name %></td>
-        <td><%= company.end_date %></td>
-        <td><%= company.investor_count %></td>
-        <td><%= company.miles_value %></td>
-        <td><%= company.miles_goal %></td>
-        <td><%= company.description %></td>
-        <td><%= link_to 'Show', company %></td>
-        <td><%= link_to 'Edit', edit_company_path(company) %></td>
-        <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<!--
+<% @companies.each do |company| %>
+  <tr>
+    <td><%= company.name %></td>
+    <td><%= company.end_date %></td>
+    <td><%= company.investor_count %></td>
+    <td><%= company.miles_value %></td>
+    <td><%= company.miles_goal %></td>
+    <td><%= company.description %></td>
+    <td><%= link_to 'Show', company %></td>
+    <td><%= link_to 'Edit', edit_company_path(company) %></td>
+    <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+-->
 
-<br>
+
+<div class="item-list">
+    <div class="wrap">
+      <% @companies.each do |company| %>
+        <%= link_to  company  do%>
+          <div class="item">
+                  <figure class="cover">
+                          <img src="https://d3n8a8pro7vhmx.cloudfront.net/eurolabour/pages/920/attachments/original/1540391488/Plastic-bottles-700x410.jpg?1540391488">
+                  </figure>
+                  <div class="content">
+                      <h3><%= company.name %></h3>
+                      <p><%= company.description %></p>
+                      <p><%= company.end_date %></p>
+                  </div>
+          </div>
+          <% end %>
+      <% end %>
+    </div>
+</div>
+</main>
+
 
 <%= link_to 'New Company', new_company_path %>

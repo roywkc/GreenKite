@@ -1,0 +1,220 @@
+.info {
+    background: #F8F8F8;
+    border-bottom: 1px solid var(--light-grey);
+    
+    
+
+    padding: var(--side-margin);
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: var(--side-margin);
+    }
+
+    .wrap {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 4rem;
+    }
+
+    .cover {
+        img {
+            width: 100%;
+        }
+    }
+
+    .content {
+        min-width: 200px;
+        .bar {
+            
+            height: 3px;
+            width: 100%;
+            background: var(--light-grey);
+            margin: 1.5rem 0;
+
+            > div {
+                background: #408A5F;
+                height: inherit;
+                transition: 2s;
+            }
+        }
+
+        .value {
+
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: 200;
+            
+            .greenfunsign {
+
+                &::before {
+
+                    content: "G";
+                    padding: 0 0.5rem;
+                    height: 3rem;
+                    background: var(--light-grey);
+                    border-radius: 1.5rem;
+                    font-size: 75%;
+                    margin-right: 0.5rem;
+                    font-weight: 700;
+                    margin-top: -0.2rem;
+                }
+            }
+
+            .goal {
+                margin-top: 0.25rem;
+                font-size: 1rem;
+
+                span {
+
+                &::before {
+
+                    content: "G";
+                    padding: 0.2rem 0.4rem;
+                    height: 3rem;
+                    background: var(--light-grey);
+                    border-radius: 1.5rem;
+                    font-size: 75%;
+                    margin-right: 0.25rem;
+                    margin-left: 0.25rem;
+                    font-weight: 700;
+                    margin-top: -0.2rem;
+                }
+                }
+            }
+
+            .hkd {
+
+                &:before {
+                    margin-right: 0.5rem;
+                    content: "HKD$";
+                }
+            }
+        }
+
+        .numset {
+            
+            margin-bottom: 1.5rem;
+            .num {
+                font-size: 2rem;
+                width: 100%;
+                display: inline-block;
+            }
+            
+        }
+
+        .invest {
+            width: 100%;
+            line-height: 3.5rem;
+            text-align: center;
+            font-size: 1.25rem;
+            background: #59AF7D;
+            color: #FFF;
+            font-weight: 600;
+            border: 0;
+        }
+    }
+}
+
+.main {
+    
+
+    &.itempage {
+
+        .item-nav {
+            line-height: 5rem;
+            border-bottom: 1px solid var(--light-grey);
+            margin-bottom: var(--side-margin);
+
+            a {
+                margin-right: 2rem;
+
+                &.seleted {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        margin-top: 0;
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 3rem;
+        }
+
+        .content {
+
+            font-size: 1.5rem;
+
+            h2 {
+                font-size: 1.25em;
+                margin-bottom: 1.5rem;
+            }
+
+            p {
+                margin-bottom: 3rem;
+            }
+
+            .timelines {
+                margin-left: 2rem;
+                border-left: 4px solid var(--light-grey);
+                padding: 2rem 2rem;
+
+                .timelines-item {
+
+                    .circle {
+                        margin-top: 0.2rem;
+                        margin-left: -2.85rem;
+                        border-radius: 10px;
+                        background: #3B9748;
+                        height: 20px;
+                        width: 20px;
+                        float: left;
+                    }
+
+                    span {
+                        padding-bottom: 2rem;
+                    }
+
+                    p {
+                        font-size: 2em;
+                    }
+
+                }
+            }
+        }
+
+
+        .plan-list {
+            min-width: 300px;
+
+            .plan {
+                border: 1px solid var(--light-grey);
+                padding: 2rem;
+                margin-bottom: 3rem;
+
+                h2 {
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+
+                .invest {
+                    width: 100%;
+                    line-height: 3.5rem;
+                    text-align: center;
+                    font-size: 1.25rem;
+                    background: #59AF7D;
+                    color: #FFF;
+                    font-weight: 600;
+                    border: 0;
+                }
+
+                li {
+                    
+                    margin: 1.5rem;
+
+                }
+            }
+        }
+    }
+}

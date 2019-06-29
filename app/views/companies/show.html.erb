@@ -1,3 +1,4 @@
+<%- title  @company.name -%>
 <div class="info">
     <h2><%= @company.name %></h2>
     <div class="wrap">
@@ -7,16 +8,17 @@
 
         <aside class="content">
 
-            <div class="bar"><div></div></div>
+            <div class="bar"><div style="width: <%= @company.miles_value.to_f / @company.miles_goal.to_f * 100 %>%"></div></div>
             <div class="value">
+            
                 <span class="greenfunsign"><%= @company.miles_value %></span>
+                <div class="goal"> of <span><%= @company.miles_goal %></span> goal</div>
             </div>
-            <div> of <%= @company.miles_goal %> goal</div>
 
 
 
             <div class="numset">
-                <span class="num"><%= @company.investor_count %></span>Backe    rs
+                <span class="num"><%= @company.investor_count %></span>Backers
             </div>
 
             <div class="numset">

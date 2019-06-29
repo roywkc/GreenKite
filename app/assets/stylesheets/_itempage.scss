@@ -116,6 +116,29 @@
             
         }
 
+        .share {
+            margin-top: 1.75rem;
+
+            svg {
+                width: 32px;
+                height: 32px;
+                margin-right: 0.5rem;
+
+                &.facebook {
+                    fill: #3C5A99;
+                }
+
+                &.google {
+                    fill: #DD4B39;
+                }
+
+                &.twitter {
+                    fill: #38A1F3;
+                }
+
+            }
+        }
+
         .invest {
             width: 100%;
             line-height: 3.5rem;

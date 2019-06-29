@@ -14,7 +14,17 @@
                 </div>
                 <div class="balance">
                     Total Balance
-                    <div><%= @user.miles %></div>
+                    <div>
+                    <svg width="44px" height="44px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="profil;e" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Desktop-HD" transform="translate(-924.000000, -193.000000)">
+                                <g id="Group-6" transform="translate(924.000000, 193.000000)">
+                                    <circle id="Oval" fill="#FFE12A" cx="32" cy="32" r="32"></circle>
+                                    <path d="M47,34.0529136 C47,42.7394508 41.4734082,48 32.1385768,48 C22.1303371,48 16,41.7669123 16,31.4005358 C16,21.1888814 22.1303371,15 31.97603,15 C39.8014981,15 45.6996255,19.3985265 46.6981273,25.8526457 L39.6621723,25.8526457 C38.6404494,22.5150703 35.7842697,20.525787 31.9992509,20.525787 C26.4726592,20.525787 23.1520599,24.5264568 23.1520599,31.3121232 C23.1520599,38.2304086 26.6816479,42.4521098 32.2546816,42.4521098 C36.8292135,42.4521098 40.0104869,39.7776289 40.1498127,35.8211654 L40.1730337,35.312793 L32.8816479,35.312793 L32.8816479,30.4501005 L47,30.4501005 L47,34.0529136 Z" id="G" fill-opacity="0.718504152" fill="#000000" fill-rule="nonzero"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg><%= @user.miles %></div>
                 </div>
             </div>
 
@@ -30,43 +40,24 @@
             <div class="pie">
 
 
-                    <svg viewBox="0 0 446 446" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <defs>
-                            <circle id="path-1" cx="223" cy="223" r="223"></circle>
-                            <circle id="path-3" cx="223" cy="223" r="223"></circle>
-                            <circle id="path-5" cx="223" cy="223" r="223"></circle>
-                        </defs>
-                        <g id="profil;e" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Desktop-HD" transform="translate(-486.000000, -289.000000)">
-                                <g id="Group" transform="translate(486.000000, 289.000000)">
-                                    <g id="Mask" fill="#E1F5D7" fill-rule="nonzero">
-                                        <circle id="path-1" cx="223" cy="223" r="223"></circle>
-                                    </g>
-                                    <g id="Clipped">
-                                        <mask id="mask-2" fill="white">
-                                            <use xlink:href="#path-1"></use>
-                                        </mask>
-                                        <g id="path-1"></g>
-                                        <rect id="Rectangle" fill="#DF5B5B" fill-rule="nonzero" mask="url(#mask-2)" x="0" y="0" width="223" height="231"></rect>
-                                    </g>
-                                    <g id="Clipped">
-                                        <mask id="mask-4" fill="white">
-                                            <use xlink:href="#path-3"></use>
-                                        </mask>
-                                        <g id="path-1"></g>
-                                        <rect id="Rectangle" fill="#C9F1FA" fill-rule="nonzero" mask="url(#mask-4)" x="223" y="0" width="223" height="231"></rect>
-                                    </g>
-                                    <g id="Clipped">
-                                        <mask id="mask-6" fill="white">
-                                            <use xlink:href="#path-5"></use>
-                                        </mask>
-                                        <g id="path-1"></g>
-                                        <rect id="Rectangle" fill="#C9F1FA" fill-rule="nonzero" mask="url(#mask-6)" transform="translate(383.500000, 228.500000) rotate(45.000000) translate(-383.500000, -228.500000) " x="272" y="113" width="223" height="231"></rect>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
+
+            <svg width="446px" height="446px" viewBox="0 0 446 446" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <circle id="path-1" cx="223" cy="223" r="223"></circle>
+            </defs>
+            <g id="profil;e" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Desktop-HD" transform="translate(-228.000000, -447.000000)">
+                    <g id="Rectangle" transform="translate(228.000000, 447.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#E1F5D7" xlink:href="#path-1"></use>
+                        <rect fill="#DF5B5B" mask="url(#mask-2)" x="0" y="0" width="223" height="231"></rect>
+                        <path d="M446,127.658334 L544.013239,225.671573 L380.671573,389.013239 L222.986761,231.328427 L223.315188,231 L223,231 L223,0 L446,0 L446,127.658334 Z" id="Combined-Shape" fill="#C9F1FA" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </svg>
             </div>
 
             <div class="item-list">
@@ -74,7 +65,7 @@
                     <figure class="cover">
                             <img src="https://whub-assets.s3.amazonaws.com/uploads/logo/file/5bd03a0aedabaf3824d46927/large_logo_2.png">
                     </figure>
-                    <div class="content">
+                    <div class="cont">
                         <h3>Bright City Shop</h3>
                         <p>Start with lithium battery for marine use, grow with batteries for other applications like scooters.</p>
                     </div>
@@ -83,7 +74,7 @@
                     <figure class="cover">
                             <img src="https://whub-assets.s3.amazonaws.com/uploads/logo/file/5b463480edabaf43133ad1e7/large_Edgar_-_Tagline_Green_Leaf.png">
                     </figure>
-                    <div class="content">
+                    <div class="cont">
                         <h3>Edgar - Fill Green</h3>
                         <p>Edgar is an eco-friendly foodie offering food in bulk and sustainable lifestyle products.</p>
                     </div>
@@ -92,7 +83,7 @@
                     <figure class="cover">
                             <img style="padding-top: 20px; "src="https://whub-assets.s3.amazonaws.com/uploads/logo/file/5371f2193832390002090000/large_screen-2.png">
                     </figure>
-                    <div class="content">
+                    <div class="cont">
                         <h3>HK Recycles</h3>
                         <p>We're in the business of maximizing social impact by reducing waste through recycling and hiring awesome people!</p>
                     </div>

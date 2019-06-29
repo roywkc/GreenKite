@@ -45,19 +45,11 @@
             padding: 0.5rem 0;
             > div {
                 font-size:3rem;
-
-                &::before {
-
-                    content: "G";
-                    padding: 0 0.75rem;
-                    height: 3rem;
-                    background: var(--light-grey);
-                    border-radius: 1.5rem;
-                    font-size: 75%;
-                    margin-right: 0.5rem;
-                    font-weight: 700;
-                }
-
+            }
+            svg {
+                vertical-align:top;
+                margin-top: 0.32rem;
+                margin-right: 0.5rem;
             }
         }
     }

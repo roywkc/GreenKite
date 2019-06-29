@@ -22,7 +22,7 @@
             </div>
 
             <div class="numset">
-                    <span class="num"><%= (Time.now - @company.end_date).days %></span>Days to go
+                    <span class="num"><%= (Time.now - @company.end_date).days.to_i %></span>Days to go
                 </div>
             <button class="invest" type="submit">Invest</button>
 

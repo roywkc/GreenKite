@@ -1,0 +1,45 @@
+
+:root {
+    --conversion-width: 850px;
+    --conversion-height: 900px;
+  }
+
+
+.conversion {
+    width: var(--conversion-width);
+    height: var(--conversion-height);
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -425px;
+    margin-top: -450px;
+    background: #FFFFFF;
+    box-shadow: 0 0 8px 0 rgba(118,146,187,0.50);
+    border-radius: 13px;
+    padding: 2rem;
+    font-size: 2rem;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+        margin: 3rem 0;
+
+        span {
+            border-bottom: 3px solid #000;
+            padding-bottom: 0.5rem;
+        }
+    }
+
+    .consversion-card-info {
+        width: 80%;
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 0 auto;
+
+        .details {
+            
+        }
+    }
+}

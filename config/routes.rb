@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get '', to: "companies#index"
+  get 'conversion', to: "conversion#index"
   resources :users
   resources :companies
   resources :investments

@@ -5,9 +5,8 @@ class CreateCompanies < ActiveRecord::Migration[5.2]
       t.timestamp :end_date
       t.integer :investor_count
       t.integer :miles_value
-      t.integer :miles_count
+      t.integer :miles_goal
       t.string :description
-      t.timestamp :milestones
 
       t.timestamps
     end

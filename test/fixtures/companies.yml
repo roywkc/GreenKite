@@ -5,7 +5,7 @@ one:
   end_date: 2019-06-29 15:10:57
   investor_count: 1
   miles_value: 1
-  miles_count: 1
+  miles_goal: 1
   description: MyString
   milestones: 2019-06-29 15:10:57
 
@@ -14,6 +14,6 @@ two:
   end_date: 2019-06-29 15:10:57
   investor_count: 1
   miles_value: 1
-  miles_count: 1
+  miles_goal: 1
   description: MyString
   milestones: 2019-06-29 15:10:57

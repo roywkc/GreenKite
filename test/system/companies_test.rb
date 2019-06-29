@@ -17,7 +17,7 @@ class CompaniesTest < ApplicationSystemTestCase
     fill_in "Description", with: @company.description
     fill_in "End date", with: @company.end_date
     fill_in "Investor count", with: @company.investor_count
-    fill_in "Miles count", with: @company.miles_count
+    fill_in "Miles count", with: @company.miles_goal
     fill_in "Miles value", with: @company.miles_value
     fill_in "Milestones", with: @company.milestones
     fill_in "Name", with: @company.name
@@ -34,7 +34,7 @@ class CompaniesTest < ApplicationSystemTestCase
     fill_in "Description", with: @company.description
     fill_in "End date", with: @company.end_date
     fill_in "Investor count", with: @company.investor_count
-    fill_in "Miles count", with: @company.miles_count
+    fill_in "Miles count", with: @company.miles_goal
     fill_in "Miles value", with: @company.miles_value
     fill_in "Milestones", with: @company.milestones
     fill_in "Name", with: @company.name

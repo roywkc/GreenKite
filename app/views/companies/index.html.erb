@@ -14,32 +14,33 @@
                 <p>They are reducing plastic water bottles in Hong Kong....</p>
             </div>
             <div class="recommended">
-                <h2>Recommended</h2>
+                <h2>
+                  <img style="width: 70px; padding-right: 10px;" src="https://whub-assets.s3.amazonaws.com/uploads/272/aaa/f42/9b6/b7e/72c/4d8/4fe/09e/75e/60b95d153c133eca31b300ff09b3a26e.png"/>Recommended</h2>
                 <div class="item">
                         <figure class="cover">
-                                <img src="https://d3n8a8pro7vhmx.cloudfront.net/eurolabour/pages/920/attachments/original/1540391488/Plastic-bottles-700x410.jpg?1540391488">
+                                <img src="https://whub-assets.s3.amazonaws.com/uploads/logo/file/5bd03a0aedabaf3824d46927/large_logo_2.png">
                         </figure>
                         <div class="content">
-                            <h3>This is title</h3>
-                            <p>They are reducing plastic water bottles in Hong Kong....</p>
+                            <h3>Bright City Shop</h3>
+                            <p>Start with lithium battery for marine use, grow with batteries for other applications like scooters.</p>
                         </div>
                 </div>
                 <div class="item">
                         <figure class="cover">
-                                <img src="https://d3n8a8pro7vhmx.cloudfront.net/eurolabour/pages/920/attachments/original/1540391488/Plastic-bottles-700x410.jpg?1540391488">
+                                <img src="https://whub-assets.s3.amazonaws.com/uploads/logo/file/5b463480edabaf43133ad1e7/large_Edgar_-_Tagline_Green_Leaf.png">
                         </figure>
                         <div class="content">
-                            <h3>This is title</h3>
-                            <p>They are reducing plastic water bottles in Hong Kong....</p>
+                            <h3>Edgar - Fill Green</h3>
+                            <p>Edgar is an eco-friendly foodie offering food in bulk and sustainable lifestyle products.</p>
                         </div>
                 </div>
                 <div class="item">
                         <figure class="cover">
-                                <img src="https://d3n8a8pro7vhmx.cloudfront.net/eurolabour/pages/920/attachments/original/1540391488/Plastic-bottles-700x410.jpg?1540391488">
+                                <img style="padding-top: 20px; "src="https://whub-assets.s3.amazonaws.com/uploads/logo/file/5371f2193832390002090000/large_screen-2.png">
                         </figure>
                         <div class="content">
-                            <h3>This is title</h3>
-                            <p>They are reducing plastic water bottles in Hong Kong....</p>
+                            <h3>HK Recycles</h3>
+                            <p>We're in the business of maximizing social impact by reducing waste through recycling and hiring awesome people!</p>
                         </div>
                 </div>
             </div>
@@ -66,11 +67,19 @@
 
 <div class="item-list">
     <div class="wrap">
-      <% @companies.each do |company| %>
+      <% @companies.each_with_index do |company, index | %>
         <%= link_to  company  do%>
           <div class="item">
                   <figure class="cover">
-                          <img src="https://d3n8a8pro7vhmx.cloudfront.net/eurolabour/pages/920/attachments/original/1540391488/Plastic-bottles-700x410.jpg?1540391488">
+                      <% if index == 0 %>
+                        <img src="https://d3n8a8pro7vhmx.cloudfront.net/eurolabour/pages/920/attachments/original/1540391488/Plastic-bottles-700x410.jpg?1540391488">
+                      <% elsif index == 1 %>
+                        <img src="https://blogs.imf.org/wp-content/uploads/2018/06/BLOG-1024x600-Polar-Bear-on-Shrinking-Ice-Sven-Erik-Arndt-Universal-Images-Group-Newscom-uigphotos235623.jpguigphotos235623.jpg">
+                      <% elsif index == 2 %>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGgSdHHjwvnVLf_bxK2RukITKIByQay1-ewFN8GsfgkLRbi-NdUg"%>
+                      <% else %> 
+                        <img src="https://finhack.io/images/people/gram-milosevic.jpg">
+                      <% end %>
                   </figure>
                   <div class="content">
                       <h3><%= company.name %></h3>

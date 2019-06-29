@@ -45,7 +45,7 @@
             </div>
 
             <div class="numset">
-                    <span class="num"><%= (Time.now - @company.end_date).days %></span>Days to go
+                    <span class="num"><%= (Time.now - @company.end_date).days.to_i %></span>Days to go
                 </div>
             <button class="invest" type="submit">Invest</button>
 
@@ -142,8 +142,8 @@
                 </svg>5 or more</h2>
 
                     <ul>
-                        <li>fjdfsjdfjsk</li>
-                        <li>fsdjfsdjkfd</li>
+                        <li>Contribute to Green</li>
+                        <li>Feel good about yourself</li>
                     </ul>
                     <button class="invest">Invest</button>
                 </div>
@@ -162,8 +162,8 @@
                         </g>
                     </svg>5 or more</h2>
                         <ul>
-                                <li>fjdfsjdfjsk</li>
-                                <li>fsdjfsdjkfd</li>
+                                <li>Champion the Green</li>
+                                <li>Become and Ent</li>
                             </ul>
                         <button class="invest">Invest</button>
                     </div>

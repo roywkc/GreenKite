@@ -72,16 +72,16 @@
 
 <main class="main itempage">
     <div class="wrap">
-        <nav class="item-nav">
-            <a ref="#compagin" class="seleted">About Us</a>
-            <a ref="#updates">Updates</a>
-            <a ref="#comments">Comments</a>
+        <nav class="item-nav" id="itemNav">
+            <a href="#about" class="seleted">About Us</a>
+            <a href="#updates">Updates</a>
+            <a href="#comments">Comments</a>
         </nav>
 
         <div class="grid">
             <div class="content">
 
-                <h3>Team</h3>
+                <h3 id="about">Team</h3>
 
                 <p>We are a group of innovative financial analysts, marketers, and engineers. We care a lot about green finance and we are passionate to solve problems that have social impacts. </p>
 
@@ -115,7 +115,7 @@
 
                 <p>For each redeemed GreenPoints from the bank loyalty program, we get a small commission from it. </p>
 
-                <h3>Competition</h3>
+                <h3  id="updates">Competition</h3>
 
                 <p>Currently, there aren't any special marketplace that targets directly at green startups, retailers, and millennials, and there aren't any significant improvements on bank loyalty programs. However, as we can see from Alibaba, Shopify, Amazon, and many other huge e-commerce platform, connecting the right customers with their loved products and providing them with the right incentives is an extremely strong competitive advantage and it will likely bring a sustainable large stream of revenue to the business. </p>
 
@@ -167,7 +167,7 @@
                 </div>
             </div>
 
-            <aside class="plan-list">
+            <aside class="plan-list" id="aside">
 
                 <div class="plan">
                     <h2><svg width="24px" height="24px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -214,3 +214,29 @@
 
 <%= link_to 'Edit', edit_company_path(@company) %> |
 <%= link_to 'Back', companies_path %>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("itemNav");
+var aside = document.getElementById("aside");
+var sticky = header.offsetTop;
+var sticky2 = aside.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    aside.classList.add("sticky2");
+  } else {
+    header.classList.remove("sticky");
+    aside.classList.remove("sticky2");
+
+  }
+  if (window.pageYOffset > sticky2) {
+    aside.classList.add("sticky2");
+  } else {
+    aside.classList.remove("sticky2");
+  }
+}
+</script>

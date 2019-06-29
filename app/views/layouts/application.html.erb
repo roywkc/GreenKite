@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>GreenKite</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<html lang="en-US">
+    <head>
+        <title>ItemPage | GreenFun</title>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Keywords" content="Greenfun.tech, ...">
+        <meta name="Description" content="">
 
-  <body>
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
+
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
+    <body>
+
+        <header class="header">
+            <div class="wrap">
+                <a class="profile">Profile</a>
+                <h1 class="title">GreenFun</h1>
+            </div>
+        </header>
+          <body>
     <%= yield %>
   </body>
 </html>

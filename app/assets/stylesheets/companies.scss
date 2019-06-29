@@ -1,3 +1,185 @@
-// Place all the styles related to the Companies controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.info {
+  background: #F8F8F8;
+  border-bottom: 1px solid var(--light-grey);
+  padding: var(--side-margin); }
+  .info .wrap {
+    width: 100rem; }
+  .info h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: var(--side-margin); }
+  .info .wrap {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 4rem; }
+  .info .cover img {
+    width: 100%; }
+  .info .content {
+    min-width: 200px; }
+    .info .content .bar {
+      height: 3px;
+      width: 100%;
+      background: var(--light-grey);
+      margin: 1.5rem 0; }
+      .info .content .bar > div {
+        background: #408A5F;
+        height: inherit;
+        width: 30%;
+        transition: 2s; }
+    .info .content .value {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 200; }
+      .info .content .value .greenfunsign::before {
+        content: "G";
+        padding: 0 0.5rem;
+        height: 3rem;
+        background: var(--light-grey);
+        border-radius: 1.5rem;
+        font-size: 75%;
+        margin-right: 0.5rem;
+        font-weight: 700;
+        margin-top: -0.2rem; }
+      .info .content .value .greenfunsign::after {
+        margin-left: 0.5rem;
+        content: "="; }
+      .info .content .value .hkd:before {
+        margin-right: 0.5rem;
+        content: "HKD$"; }
+    .info .content .numset {
+      margin-bottom: 1.5rem; }
+      .info .content .numset .num {
+        font-size: 2rem;
+        width: 100%;
+        display: inline-block; }
+    .info .content .invest {
+      width: 100%;
+      line-height: 3.5rem;
+      text-align: center;
+      font-size: 1.25rem;
+      background: #59AF7D;
+      color: #FFF;
+      font-weight: 600;
+      border: 0; }
+
+.main.itempage {
+  margin-top: 0; }
+  .main.itempage .item-nav {
+    line-height: 5rem;
+    border-bottom: 1px solid var(--light-grey);
+    margin-bottom: var(--side-margin); }
+    .main.itempage .item-nav a {
+      margin-right: 2rem; }
+      .main.itempage .item-nav a.seleted {
+        font-weight: 700; }
+  .main.itempage .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 3rem; }
+  .main.itempage .content {
+    font-size: 1.5rem; }
+    .main.itempage .content h2 {
+      font-size: 1.25em;
+      margin-bottom: 1.5rem; }
+    .main.itempage .content p {
+      margin-bottom: 3rem; }
+    .main.itempage .content .timelines {
+      margin-left: 2rem;
+      border-left: 4px solid var(--light-grey);
+      padding: 2rem 2rem; }
+      .main.itempage .content .timelines .timelines-item .circle {
+        margin-top: 0.2rem;
+        margin-left: -2.85rem;
+        border-radius: 10px;
+        background: #3B9748;
+        height: 20px;
+        width: 20px;
+        float: left; }
+      .main.itempage .content .timelines .timelines-item span {
+        padding-bottom: 2rem; }
+      .main.itempage .content .timelines .timelines-item p {
+        font-size: 2em; }
+  .main.itempage .plan-list {
+    min-width: 300px; }
+    .main.itempage .plan-list .plan {
+      border: 1px solid var(--light-grey);
+      padding: 2rem;
+      margin-bottom: 3rem; }
+      .main.itempage .plan-list .plan h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem; }
+      .main.itempage .plan-list .plan .invest {
+        width: 100%;
+        line-height: 3.5rem;
+        text-align: center;
+        font-size: 1.25rem;
+        background: #59AF7D;
+        color: #FFF;
+        font-weight: 600;
+        border: 0; }
+      .main.itempage .plan-list .plan li {
+        margin: 1.5rem; }
+
+.main.homepage .row {
+  display: grid; }
+
+
+:root {
+  --content-width: 80rem;
+  --side-margin: 3rem;
+  --highline-color: #2CAA60;
+  --light-grey: #E6E6E6; }
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body,
+ol {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3 {
+  font-weight: inherit;
+  font-size: 1rem; }
+
+html {
+  font-size: 14px;
+  font-family: "SF Compact Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #262628;
+  height: 100%; }
+
+.wrap {
+  width: var(--content-width);
+  margin: 0 auto; }
+
+.info,
+.main {
+  margin-top: 5rem; }
+
+.header {
+  position: fixed;
+  width: 100%;
+  line-height: 5rem;
+  height: 5rem;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid var(--light-grey);
+  background: #FFF; }
+  .header .profile {
+    float: right; }
+  .header .title {
+    text-align: center;
+    font-family: "SF Compact Rounded";
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--highline-color); }
+
+.footer {
+  margin-top: 6rem;
+  margin-bottom: 3rem; }

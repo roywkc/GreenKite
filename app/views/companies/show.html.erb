@@ -80,11 +80,6 @@
 
         <div class="grid">
             <div class="content">
-
-                <h3 id="about">Team</h3>
-
-                <p>We are a group of innovative financial analysts, marketers, and engineers. We care a lot about green finance and we are passionate to solve problems that have social impacts. </p>
-
                 <h3>Background</h3>
 
                 <p>With most millenials, 8/10 are adopting green living lifestyle. They show strong interests in making environmental friendly changes and are looking for ways to do so. </p>
@@ -97,31 +92,9 @@
 
                 <p>GreenKite is a marketplace for millennials to utilise their bank loyalty program to invest in green startups and buy eco-friendly products. It adds an additional channel to the existing bank loyalty program and exposes the users to a variety of green startups and products.</p>
 
-                <h3>Key Value Proposition</h3>
-
-                <h4>Connectivity</h4>
-
-                <p>our platform connects green startups and environmental-friendly retail sellers with eco-conscious users. It provides a channel for green startups to get funding which is crucial to their success, and a marketing opportunity for environmental-friendly retail sellers to acquire more customers. For eco-conscious users, they are exposed to a variety of legitimate green startups and healthy products, and thus have more choices in contributing to a more sustainable society. </p>
-
-                <h4>Flexibility</h4>
-
-                <p>the users can pick the startups and retail sellers out of their choice. They can either pay with their preferred payment methods or use their GreenPoints from their credit card reward system: choose the amount of points they would like to use to invest and/or purchase. All the listing green startups are evaluated by reputational startup investors, incubators, and connectors such as WHub. </p>
-
-                <h4>Transparency</h4>
-
-                <p>users can see a clear timeline of the milestones and progress of the companies, and they will also receive monthly company report and other news related to their investments. For purchased green products, users can track the shipment, have free 7-day return, and write reviews and provide other feedback. </p>
-            
-                <h3>Bussiness Model</h3>
-
-                <p>For each redeemed GreenPoints from the bank loyalty program, we get a small commission from it. </p>
-
-                <h3  id="updates">Competition</h3>
-
-                <p>Currently, there aren't any special marketplace that targets directly at green startups, retailers, and millennials, and there aren't any significant improvements on bank loyalty programs. However, as we can see from Alibaba, Shopify, Amazon, and many other huge e-commerce platform, connecting the right customers with their loved products and providing them with the right incentives is an extremely strong competitive advantage and it will likely bring a sustainable large stream of revenue to the business. </p>
-
                 <h2>Updates</h2>
 
-                <div class="timelines">
+                <div class="timelines" id="updates">
                     <div class="timelines-item">
                         <div class="circle"></div>
                         <span>Fri evening</span>
@@ -159,12 +132,38 @@
                     </div>
 
                     <div class="timelines-item">
-                    <div class="circle"></div>
-                    <span>Sat night</span>
-                    <p class="content">Testing the Prototype</p>
+                        <div class="circle"></div>
+                        <span>Sat night</span>
+                        <p class="content">Testing the Prototype</p>
+                    </div>
                 </div>
 
-                </div>
+                <h3>Key Value Proposition</h3>
+
+                <h4>Connectivity</h4>
+
+                <p>our platform connects green startups and environmental-friendly retail sellers with eco-conscious users. It provides a channel for green startups to get funding which is crucial to their success, and a marketing opportunity for environmental-friendly retail sellers to acquire more customers. For eco-conscious users, they are exposed to a variety of legitimate green startups and healthy products, and thus have more choices in contributing to a more sustainable society. </p>
+
+                <h4>Flexibility</h4>
+
+                <p>the users can pick the startups and retail sellers out of their choice. They can either pay with their preferred payment methods or use their GreenPoints from their credit card reward system: choose the amount of points they would like to use to invest and/or purchase. All the listing green startups are evaluated by reputational startup investors, incubators, and connectors such as WHub. </p>
+
+                <h4>Transparency</h4>
+
+                <p>users can see a clear timeline of the milestones and progress of the companies, and they will also receive monthly company report and other news related to their investments. For purchased green products, users can track the shipment, have free 7-day return, and write reviews and provide other feedback. </p>
+            
+                <h3>Bussiness Model</h3>
+
+                <p>For each redeemed GreenPoints from the bank loyalty program, we get a small commission from it. </p>
+
+                <h3  id="updates">Competition</h3>
+
+                <p>Currently, there aren't any special marketplace that targets directly at green startups, retailers, and millennials, and there aren't any significant improvements on bank loyalty programs. However, as we can see from Alibaba, Shopify, Amazon, and many other huge e-commerce platform, connecting the right customers with their loved products and providing them with the right incentives is an extremely strong competitive advantage and it will likely bring a sustainable large stream of revenue to the business. </p>
+
+                <h3 id="about">Team</h3>
+
+                <p>We are a group of innovative financial analysts, marketers, and engineers. We care a lot about green finance and we are passionate to solve problems that have social impacts. </p>
+
             </div>
 
             <aside class="plan-list" id="aside">
@@ -213,26 +212,26 @@
 </main>
 
 <script>
-window.onscroll = function() {myFunction()};
+// window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("itemNav");
-var aside = document.getElementById("aside");
-var sticky = header.offsetTop;
-var sticky2 = aside.offsetTop;
+// var header = document.getElementById("itemNav");
+// var aside = document.getElementById("updates");
+// var sticky = header.offsetTop;
+// var sticky2 = aside.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-    aside.classList.add("sticky2");
-  } else {
-    header.classList.remove("sticky");
-    aside.classList.remove("sticky2");
+// function myFunction() {
+//   if (window.pageYOffset > sticky) {
+//     header.classList.add("sticky");
+//     aside.classList.add("sticky2");
+//   } else {
+//     header.classList.remove("sticky");
+//     aside.classList.remove("sticky2");
 
-  }
-  if (window.pageYOffset > sticky2) {
-    aside.classList.add("sticky2");
-  } else {
-    aside.classList.remove("sticky2");
-  }
-}
+//   }
+//   if (window.pageYOffset > sticky2) {
+//     aside.classList.add("sticky2");
+//   } else {
+//     aside.classList.remove("sticky2");
+//   }
+// }
 </script>

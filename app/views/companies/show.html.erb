@@ -11,8 +11,31 @@
             <div class="bar"><div style="width: <%= @company.miles_value.to_f / @company.miles_goal.to_f * 100 %>%"></div></div>
             <div class="value">
             
-                <span class="greenfunsign"><%= @company.miles_value %></span>
-                <div class="goal"> of <span><%= @company.miles_goal %></span> goal</div>
+                <span class="greenfunsign">
+                <svg width="30px" height="30px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="profil;e" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Desktop-HD" transform="translate(-924.000000, -193.000000)">
+                            <g id="Group-4" transform="translate(924.000000, 161.000000)">
+                                <g id="Group-5" transform="translate(0.000000, 32.000000)">
+                                    <circle id="Oval" fill="#D8D8D8" cx="32" cy="32" r="32"></circle>
+                                    <path d="M47,34.0529136 C47,42.7394508 41.4734082,48 32.1385768,48 C22.1303371,48 16,41.7669123 16,31.4005358 C16,21.1888814 22.1303371,15 31.97603,15 C39.8014981,15 45.6996255,19.3985265 46.6981273,25.8526457 L39.6621723,25.8526457 C38.6404494,22.5150703 35.7842697,20.525787 31.9992509,20.525787 C26.4726592,20.525787 23.1520599,24.5264568 23.1520599,31.3121232 C23.1520599,38.2304086 26.6816479,42.4521098 32.2546816,42.4521098 C36.8292135,42.4521098 40.0104869,39.7776289 40.1498127,35.8211654 L40.1730337,35.312793 L32.8816479,35.312793 L32.8816479,30.4501005 L47,30.4501005 L47,34.0529136 Z" id="G" fill-opacity="0.678786058" fill="#000000" fill-rule="nonzero"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg><%= @company.miles_value %></span>
+                <div class="goal"> of <svg width="20px" height="20px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="profil;e" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Desktop-HD" transform="translate(-924.000000, -193.000000)">
+                        <g id="Group-4" transform="translate(924.000000, 161.000000)">
+                            <g id="Group-5" transform="translate(0.000000, 32.000000)">
+                                <circle id="Oval" fill="#D8D8D8" cx="32" cy="32" r="32"></circle>
+                                <path d="M47,34.0529136 C47,42.7394508 41.4734082,48 32.1385768,48 C22.1303371,48 16,41.7669123 16,31.4005358 C16,21.1888814 22.1303371,15 31.97603,15 C39.8014981,15 45.6996255,19.3985265 46.6981273,25.8526457 L39.6621723,25.8526457 C38.6404494,22.5150703 35.7842697,20.525787 31.9992509,20.525787 C26.4726592,20.525787 23.1520599,24.5264568 23.1520599,31.3121232 C23.1520599,38.2304086 26.6816479,42.4521098 32.2546816,42.4521098 C36.8292135,42.4521098 40.0104869,39.7776289 40.1498127,35.8211654 L40.1730337,35.312793 L32.8816479,35.312793 L32.8816479,30.4501005 L47,30.4501005 L47,34.0529136 Z" id="G" fill-opacity="0.678786058" fill="#000000" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg><span><%= @company.miles_goal %></span> goal</div>
             </div>
 
 
@@ -105,7 +128,18 @@
             <aside class="plan-list">
 
                 <div class="plan">
-                    <h2>$5 or more</h2>
+                    <h2><svg width="24px" height="24px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="profil;e" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Desktop-HD" transform="translate(-924.000000, -193.000000)">
+                            <g id="Group-4" transform="translate(924.000000, 161.000000)">
+                                <g id="Group-5" transform="translate(0.000000, 32.000000)">
+                                    <circle id="Oval" fill="#D8D8D8" cx="32" cy="32" r="32"></circle>
+                                    <path d="M47,34.0529136 C47,42.7394508 41.4734082,48 32.1385768,48 C22.1303371,48 16,41.7669123 16,31.4005358 C16,21.1888814 22.1303371,15 31.97603,15 C39.8014981,15 45.6996255,19.3985265 46.6981273,25.8526457 L39.6621723,25.8526457 C38.6404494,22.5150703 35.7842697,20.525787 31.9992509,20.525787 C26.4726592,20.525787 23.1520599,24.5264568 23.1520599,31.3121232 C23.1520599,38.2304086 26.6816479,42.4521098 32.2546816,42.4521098 C36.8292135,42.4521098 40.0104869,39.7776289 40.1498127,35.8211654 L40.1730337,35.312793 L32.8816479,35.312793 L32.8816479,30.4501005 L47,30.4501005 L47,34.0529136 Z" id="G" fill-opacity="0.678786058" fill="#000000" fill-rule="nonzero"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>5 or more</h2>
 
                     <ul>
                         <li>fjdfsjdfjsk</li>
@@ -115,7 +149,18 @@
                 </div>
 
                 <div class="plan">
-                        <h2>$5 or more</h2>
+                        <h2><svg width="24px" height="24px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="profil;e" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Desktop-HD" transform="translate(-924.000000, -193.000000)">
+                                <g id="Group-4" transform="translate(924.000000, 161.000000)">
+                                    <g id="Group-5" transform="translate(0.000000, 32.000000)">
+                                        <circle id="Oval" fill="#D8D8D8" cx="32" cy="32" r="32"></circle>
+                                        <path d="M47,34.0529136 C47,42.7394508 41.4734082,48 32.1385768,48 C22.1303371,48 16,41.7669123 16,31.4005358 C16,21.1888814 22.1303371,15 31.97603,15 C39.8014981,15 45.6996255,19.3985265 46.6981273,25.8526457 L39.6621723,25.8526457 C38.6404494,22.5150703 35.7842697,20.525787 31.9992509,20.525787 C26.4726592,20.525787 23.1520599,24.5264568 23.1520599,31.3121232 C23.1520599,38.2304086 26.6816479,42.4521098 32.2546816,42.4521098 C36.8292135,42.4521098 40.0104869,39.7776289 40.1498127,35.8211654 L40.1730337,35.312793 L32.8816479,35.312793 L32.8816479,30.4501005 L47,30.4501005 L47,34.0529136 Z" id="G" fill-opacity="0.678786058" fill="#000000" fill-rule="nonzero"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>5 or more</h2>
                         <ul>
                                 <li>fjdfsjdfjsk</li>
                                 <li>fsdjfsdjkfd</li>

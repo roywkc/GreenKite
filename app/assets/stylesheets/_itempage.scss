@@ -154,6 +154,19 @@
             }
         }
 
+        .sticky {
+            position: fixed;
+            top: 5rem;
+            background: #FFF;
+            width: 100%;
+          
+
+        }
+
+        .sticky + .item-nav {
+            padding-top: 102px;
+          }
+
         margin-top: 0;
         .grid {
             display: grid;
@@ -164,6 +177,8 @@
         .content {
 
             font-size: 1.5rem;
+
+
 
             h2 {
                 font-size: 1.5em;
@@ -203,6 +218,7 @@
                         height: 20px;
                         width: 20px;
                         float: left;
+                        transition: 1s;
                     }
 
                     span {
@@ -225,6 +241,18 @@
                 margin-bottom: 3rem; 
             }
         }
+
+        .sticky2 {
+            position: fixed;
+            top: 13rem;
+            background: #FFF;
+            right: 0;
+
+        }
+
+        .sticky2 + .content {
+            padding-top: 102px;
+          }
 
 
         .plan-list {

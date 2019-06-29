@@ -5,6 +5,10 @@
 
     &.homepage{
 
+        img:hover {
+            opacity: .8;
+            transition: .5s;
+        }
  
         .bottom {
             border-bottom: 1px solid var(--light-grey);
@@ -48,6 +52,14 @@
                 p {
                     margin-top: 0.5rem;
                     font-size: 1.25rem;
+                }
+
+                .cover {
+                    img { 
+                        max-height: 20rem;
+                        object-fit: cover;
+
+                    }
                 }
             }
 
@@ -111,4 +123,33 @@
         }
     }
 
+}
+
+@media only screen and (max-width: 800px) {
+    .main {
+        &.homepage {
+            .row {
+                &.two {
+                    grid-template-columns: auto;
+                }
+
+                .feature {
+                    border: 0;
+                    border-bottom: 1px solid var(--light-grey);
+                    padding-bottom: 3rem;
+                    margin-bottom: 1rem;
+                    padding-right: 0;
+
+                }
+            }
+
+            .item-list {
+                .wrap {
+                        grid-template-columns: auto;
+
+                }
+            }
+        }
+        
+    }
 }

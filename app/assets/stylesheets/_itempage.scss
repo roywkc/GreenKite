@@ -1,3 +1,16 @@
+@keyframes heartbeat {
+    0%{
+      width: 0;
+      color: #333;
+    }
+    30%{
+      width: 100%;
+    }
+    100%{
+      transform: scale(1.0);
+    }
+  }
+
 .info {
     background: #F8F8F8;
     border-bottom: 1px solid var(--light-grey);
@@ -35,8 +48,8 @@
             > div {
                 background: #408A5F;
                 height: inherit;
-                transition: 2s;
-            }
+                animation-name: heartbeat;
+                animation-duration: 2s;            }
         }
 
         .value {
@@ -159,6 +172,8 @@
                 margin-left: 2rem;
                 border-left: 4px solid var(--light-grey);
                 padding: 2rem 2rem;
+                padding-bottom: 0;
+                margin-bottom: 5rem;
 
                 .timelines-item {
 
@@ -181,6 +196,15 @@
                     }
 
                 }
+            }
+
+            ul, li {
+                margin-left: 1rem;
+                padding-left: 1rem;
+            }
+
+            ul {
+                margin-bottom: 3rem; 
             }
         }
 

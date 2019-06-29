@@ -10,38 +10,39 @@
       </ul>
     </div>
   <% end %>
+  <div style="padding-top:200px">
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
+    <div class="field">
+      <%= form.label :end_date %>
+      <%= form.datetime_select :end_date %>
+    </div>
 
-  <div class="field">
-    <%= form.label :end_date %>
-    <%= form.datetime_select :end_date %>
-  </div>
+    <div class="field">
+      <%= form.label :investor_count %>
+      <%= form.number_field :investor_count %>
+    </div>
 
-  <div class="field">
-    <%= form.label :investor_count %>
-    <%= form.number_field :investor_count %>
-  </div>
+    <div class="field">
+      <%= form.label :miles_value %>
+      <%= form.number_field :miles_value %>
+    </div>
 
-  <div class="field">
-    <%= form.label :miles_value %>
-    <%= form.number_field :miles_value %>
-  </div>
+    <div class="field">
+      <%= form.label :miles_goal %>
+      <%= form.number_field :miles_goal %>
+    </div>
 
-  <div class="field">
-    <%= form.label :miles_goal %>
-    <%= form.number_field :miles_goal %>
-  </div>
+    <div class="field">
+      <%= form.label :description %>
+      <%= form.text_field :description %>
+    </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+    <div class="actions">
+      <%= form.submit %>
+    </div>
   </div>
 <% end %>

@@ -294,3 +294,22 @@
         }
     }
 }
+
+@media only screen and (max-width: 900px) {
+    .info {
+
+
+        .wrap {
+            grid-template-columns: auto;
+        }
+    }
+    .main{
+            &.itempage {
+                .grid {
+                    grid-template-columns: auto;
+                }
+            }
+            }
+    
+
+}
